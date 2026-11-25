@@ -2,6 +2,7 @@ import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
+// Keep the excuse wording untouched; only the plumbing around it may change.
 const scriptDir = dirname(fileURLToPath(import.meta.url));
 const outputDir = process.env.MAKEFUN_OUTPUT_DIR
   ? join(process.env.MAKEFUN_OUTPUT_DIR)
